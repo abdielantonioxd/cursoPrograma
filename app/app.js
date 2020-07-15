@@ -1,20 +1,12 @@
-var names = [];
+var  object = [];
 
+var password = document.getElementById("password").value;
+var email = document.getElementById("email").classList.add("red");
 
-function setName(data){
-    names.push({name:data});
-    renderList ()
-}
-
-function renderList (){
-    var setData = document.getElementById("list");
-    setData.innerHTML = ""
-    for (let i = 0; i < names.length; i++) {
-        setData.innerHTML += `
-        <li class="list-group-item">${names[i].name}</li>
-        `
+function validateForm() {
+    if (password != "" ) {
+        console.log("verde");
+    }else{
+        console.log("rojo");
     }
 }
-
-
-
